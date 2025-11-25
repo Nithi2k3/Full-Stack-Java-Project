@@ -1,0 +1,114 @@
+.hospital-details {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.stat-card {
+   background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.stat-value {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.feedback {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.feedback input, .feedback textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.feedback textarea {
+    height: 80px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star-rating span {
+    color: #ccc;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.star-rating span.active,
+.star-rating span:hover,
+.star-rating span:hover ~ span {
+    color: gold;
+}
+
+.feedback-card {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.toggle-feedback {
+    cursor: pointer;
+    margin-top: 15px;
+    color: #2d89ef;
+}
+
+.feedback-card.fade-in {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.feedback-card.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

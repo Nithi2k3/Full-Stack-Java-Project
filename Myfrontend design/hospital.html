@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hospital.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Hospital Finder</h1>
+        <a href="index.html">Home</a>
+    </header>
+
+    <section class="hospital-details" id="hospitalDetails">
+        <span id="hospitalRating"></span>
+        <!-- JS will fill hospital details here -->
+    </section>
+
+    <section>
+        <h3>Hospital Statistics</h3>
+        <div class="stats-grid" id="stats"></div>
+        <!-- Stats will be inserted here -->
+    </section>
+
+    <!-- FEEDBACK -->
+<section class="feedback">
+    <h2>Leave Your Feedback</h2>
+    <input type="text" id="feedbackName" placeholder="Your name" required>
+    <input type="email" id="feedbackEmail" placeholder="Your email" required>
+    <textarea id="feedbackInput" placeholder="Your feedback..." required></textarea>
+
+    <!-- Star Rating -->
+    <div class="star-rating">
+        <span data-value="5">★</span>
+        <span data-value="4">★</span>
+        <span data-value="3">★</span>
+        <span data-value="2">★</span>
+        <span data-value="1">★</span>
+    </div>
+
+    <button id="sendFeedback">Submit</button>
+
+    <h3 class="toggle-feedback">View Feedback ▼</h3>
+    <div class="feedback-list" style="display:none;"></div>
+</section>
+
+
+    <script src="js/hospital.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

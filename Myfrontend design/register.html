@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="register-container">
+
+    <div class="icon-container">
+      <img src="https://img.icons8.com/color/96/hospital-room.png" alt="Hospital Icon">
+    </div>
+
+    <h1>Create Account</h1>
+
+  <form id="registerForm">
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+
+    <select id="role">
+      <option value="PEOPLE">People</option>
+      <option value="STAFF">Staff</option>
+      <option value="ADMIN">Admin</option>
+    </select><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <p>Already have an account?  <a href="login.html">Login here</a></p>
+
+  </div>
+
+  <script src="js/register.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+</html>

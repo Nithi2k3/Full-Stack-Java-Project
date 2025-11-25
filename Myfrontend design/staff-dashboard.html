@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="css/staff-dashboard.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Hospital Selection System</h1>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="#" onclick="logout()" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+
+    <h1>Welcome! :)</h1>
+    <div class="top-bar">
+        <input type="text" id="staffSearch" placeholder="Search by city, hospital, or area…">
+        <button id="staffSearchBtn">Search</button>
+        <div id="staffSearchResults" class="dropdown"></div> <!-- suggestions -->
+    </div>
+    
+    <h2>Hospitals</h2>
+    <div id="groupedList"></div>
+
+  <!-- Update hospital modal -->
+  <div id="updateForm" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="hideUpdateForm()">&times;</span>
+        <form id="hospitalUpdateForm">
+
+            <h3>Update Hospital</h3>
+
+            <label>Total Beds:</label>
+            <input type="number" id="totalBeds">
+
+            <label>Available Beds:</label>
+            <input type="number" id="availableBeds">
+
+            <label>Available Doctors:</label>
+            <input type="number" id="availableDoctors">
+
+            <label>Oxygen Available:</label>
+            <select id="oxygenAvailable">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+
+            <label>Ventilator Available:</label>
+            <select id="ventilatorAvailable">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+
+            <label>Ambulance Available:</label>
+            <select id="ambulanceAvailable">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+
+            <label>Open 24 Hours:</label>
+            <select id="open24Hours">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+
+            <div class="form-actions">
+                <button type="submit">Save</button>
+            <button type="button" onclick="hideUpdateForm()">Cancel</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/staff-dashboard.js"></script>
+</body>
+</html>

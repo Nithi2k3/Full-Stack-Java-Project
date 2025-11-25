@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Selection System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 class="site-title">Hospital Selection System</h1>
+        <nav id="navbar">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="#about-us">About Us</a>
+        </nav>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <section class="search-section">
+       <div class ="search">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search by hospital or city or area..." autocomplete="off">
+        <div id="searchResults" class="dropdown"></div>
+    </div>
+
+        <!-- QUOTE SECTION -->
+    <div class="quotes">
+        <p>The one thing that you have that nobody else has is you Your voice, your mind, your story, your vision. </p>
+        <p> So write and draw and build and play and dance and "live as only you can".</p>
+        <p>"Health is wealth – let us help you find the best care."</p>
+    </div>
+    
+    </section>
+
+    <h1>Hospitals List</h1>
+
+    <!-- City previews (top 2-3 hospitals per city) -->
+    <section id="cityPreview" class="city-preview"></section>
+
+    <!-- HOSPITAL LIST-->
+    <section class="hospital-list" id="hospitalList">
+        <!-- Hospital cards populated by JS -->
+    </section> 
+
+    <!-- ABOUT US -->
+    <section class="about-us" id="about-us">
+        <div class="about-container">
+            <div class="about-text">
+                <div class="title">
+                    <h2>About Us</h2>
+                </div>
+                <div class="title2">
+                    <h3>Welcome to the Hospital Selection System</h3>
+                    <p>Our platform is to quickly find the best hospitals that meet your needs.</p>
+                    <p>Our goal is to make healthcare access faster, easier, and smarter by helping you search, compare, and select hospitals based on real-time information and your preferences.</p>
+                    <p>With our platform, you can:</p>
+                    <ul>  
+                        <li>Search hospitals by hospital name, area or city.</li>
+                        <li>View hospital details including bed availability, oxygen supply, ambulance services, and specialized facilities.</li>
+                        <!-- <li>Use Google Maps integration to find hospitals near you and get directions instantly.</li> -->
+                        <li>Sort and filter results by ratings, facilities, distance, or services for better decision-making.</li>
+                        <li>Read and share feedback to help others choose the right hospital.</li>
+                    </ul>    
+                    <p>Whether it’s an emergency or a planned treatment, the Hospital Selection System ensures you have the right information at the right time.</p>
+                    <p><strong>Our mission is simple:</strong> to connect patients with the right healthcare providers efficiently and transparently.</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="css/background/hope.jpg" alt="About Us" />
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

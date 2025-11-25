@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container {
+    background: #fff;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+    width: 370px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Hospital Icon */
+.icon-container {
+    margin-bottom: 15px;
+}
+.icon-container img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Title */
+.register-container h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input + Select */
+.register-container input,
+.register-container select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.register-container input:focus,
+.register-container select:focus {
+    border-color: #38ef7d;
+    box-shadow: 0px 0px 6px rgba(56, 239, 125, 0.4);
+    outline: none;
+}
+
+/* Register button */
+.register-container button {
+    width: 100%;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 15px;
+}
+
+.register-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(56,239,125,0.4);
+}
+
+/* Links */
+.register-container .links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-container .links a {
+    color: #11998e;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.register-container .links a:hover {
+    color: #38ef7d;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
